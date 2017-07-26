@@ -17,6 +17,31 @@ a:hover {
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: 1px solid #fff;
+  width: 80px;
+  height: 95px;
+  -webkit-border-radius: 95px;
+  -moz-border-radius: 95px;
+  border-radius: 95px;
+  position: absolute;
+}
+#circle {
+   color: black;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    border-radius: 300px;
+}
+
+#circle1 {
+   color: black;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
 }
 
 
@@ -27,7 +52,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-image: url("background.jpg");
+  background-image: url("http://wallpapercave.com/wp/xTkHBfj.jpg");
   font-family: courier;
 }
 body {
