@@ -5,8 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
     height: 100%;
@@ -35,6 +37,7 @@ body, html {
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> RESUME</a>
       <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PROJECTS</a>
           <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -56,10 +59,10 @@ body, html {
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Claire M. Wilson</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Claire M. Wilson</span><br>
-    <span class="w3-large">Simply Coding</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">About me</a></p>
+    <span class="w3-jumbo w3-hide-small w3-animate-top" id="name">Claire M. Wilson</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium w3-animate-top">Claire M. Wilson</span><br>
+    <span class="w3-large w3-animate-top">Simply Coding</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off w3-animate-top">About me</a></p>
   </div>
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
       <a href="https://www.facebook.com/c19cw1"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
@@ -108,11 +111,11 @@ body, html {
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
       <img src="lary.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Say hello to Lary the evil Chat Box. In this project I was asked to create a chat box capable of holding a simple conversation">
-      
+
     </div>
     <div class="w3-col l3 m6">
       <img src="robot.jpg.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Using Arduino and the Board of Education Shield, I was able to create a robot that not only moves but also lights up to the song 'Fleur de Lis'">
-     
+
     </div>
     <div class="w3-col l3 m6">
       <img src="escape.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A robot built to detect walls and move away from them using Arduino code and wisker wires.">
@@ -120,10 +123,10 @@ body, html {
     </div>
     <div class="w3-col l3 m6">
       <img src="psgive.png" style="width:80%" onclick="onClick(this)" class="w3-hover-opacity" alt="P.S. Give, an ios app built to connect PTAs of public schools with donnors directly, cutting out most of the service fees transaction costs that would come from donating on a larger companies donation website. Currently in Beta testing, but scheduled to arrive on the app store by September 2017.">
-      
+
     </div>
   </div>
-  
+
   <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
@@ -167,16 +170,16 @@ body, html {
 </div>
 
 <!-- Contact Section -->
-<div class="w3-container w3-white" style="padding:128px 16px" id="contact">
+<div class="w3-container w3-white w3-row-padding" id="contact">
   <h3 class="w3-center">CONTACT</h3>
   <p class="w3-center w3-large">Lets get in touch. Send me a message:</p>
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-half">
-      <p style= "text-align: center"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: wilson.m.claire@gmail.com</p>
-      <p style= "text-align: center"><i class="fa fa-linkedin fa-fw w3-xxlarge w3-margin-right"> </i> LinkedIn: Claire Wilson</p>
-      <p style= "text-align: center"><i class="fa fa-facebook fa-fw w3-xxlarge w3-margin-right"> </i> Facebook: c19cw1</p>
-      <p style= "text-align: center"><i class="fa fa-snapchat fa-fw w3-xxlarge w3-margin-right"> </i>  Snapchat: @berriestclarist</p>
-     
+      <p style= "text-align: left"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: wilson.m.claire@gmail.com</p>
+      <p style= "text-align: left"><i class="fa fa-linkedin fa-fw w3-xxlarge w3-margin-right"> </i> LinkedIn: Claire Wilson</p>
+      <p style= "text-align: left"><i class="fa fa-facebook fa-fw w3-xxlarge w3-margin-right"> </i> Facebook: c19cw1</p>
+      <p style= "text-align: left"><i class="fa fa-snapchat fa-fw w3-xxlarge w3-margin-right"> </i>  Snapchat: @berriestclarist</p>
+
 
     </div>
     <div class="w3-half">
@@ -239,7 +242,6 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
