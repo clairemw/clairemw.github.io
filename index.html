@@ -168,16 +168,16 @@ body, html {
     </div>
   </div>
 </div>
+    
 <!-- Contact -->
-<h2 class="content-head is-center">Contact Us!</h2>
-  <aside>
-       <p>
-           We would <em>love</em> to hear from you! </p>
-           <p>Please use the <b><em>Contact Form</em></b>
-           to send us a message.
-       </p>
-   </aside>
-
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">Contact me!</h3>
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+    
+      <!-- FORM -->
+      <p>I would love to hear from you:</p>
+      
 <!-- START HERE -->
    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -185,18 +185,12 @@ body, html {
    <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
 
   <form id="gform" method="POST" class="pure-form pure-form-stacked"
-  action="https://script.google.com/macros/s/AKfycbwMxYDrufp73bKdU8gMvxFDdHRuzcR4IKQUB33B7GqwyfyZS04/exec">
+  action="https://script.google.com/macros/s/AKfycbyeH7PCOqMKmKXnakgOavfPVQ6dK-gG3IHvh73kXUh80q9bnDc/exec">
     <!-- change the form action to your script url -->
 
     <fieldset class="pure-group">
       <label for="name">Name: </label>
-      <input id="name" name="name" placeholder="What your Mom calls you" />
-    </fieldset>
-
-    <fieldset class="pure-group">
-      <label for="message">Message: </label>
-      <textarea id="message" name="message" rows="10"
-      placeholder="Tell us what's on your mind..."></textarea>
+      <input id="name" name="name" placeholder="What's your name?" />
     </fieldset>
 
     <fieldset class="pure-group">
@@ -206,10 +200,11 @@ body, html {
       <span id="email-invalid" style="display:none">
         Must be a valid email address</span>
     </fieldset>
-
+    
     <fieldset class="pure-group">
-      <label for="color">Favourite Color: </label>
-      <input id="color" name="color" placeholder="green" />
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" rows="10"
+      placeholder="Tell us what's on your mind..."></textarea>
     </fieldset>
 
     <button class="button-success pure-button button-xlarge">
@@ -219,8 +214,8 @@ body, html {
 
   <!-- Customise the Thankyou Message People See when they submit the form: -->
   <div style="display:none;" id="thankyou_message">
-    <h2><em>Thanks</em> for contacting us!
-      We will get back to you soon!</h2>
+    <h2><em>Thank you</em> for contacting me!
+      I hope to get back to you soon!</h2>
   </div>
 
   <!-- Submit the Form to Google Using "AJAX" -->
@@ -229,6 +224,12 @@ body, html {
   <!-- <script data-cfasync="false" type="text/javascript"
   src="/form-submission-handler.js"></script> -->
 <!-- END -->
+
+      </form>
+    </div>
+  </div>
+</div>
+
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
